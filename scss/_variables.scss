@@ -1,0 +1,19 @@
+$font-size: 16px;
+$font-family: 'Calibri', sans-serif;
+$color: #dddddd;
+$background-color: #333333;
+$primary-color: #5b00d1;
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+// animations
+@keyframes show-links {
+    to {
+        height: 13rem;
+    }
+}

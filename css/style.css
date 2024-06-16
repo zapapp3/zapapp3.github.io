@@ -1,0 +1,207 @@
+@-webkit-keyframes show-links {
+  to {
+    height: 13rem;
+  }
+}
+@keyframes show-links {
+  to {
+    height: 13rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Calibri", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333333;
+  color: #dddddd;
+}
+.container > * {
+  padding: 0.5em;
+}
+
+.header-hero-wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(darkblue), to(rgb(2, 2, 44)));
+  background: linear-gradient(to top, darkblue, rgb(2, 2, 44));
+  min-height: inherit;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .hamburger {
+  position: relative;
+}
+.header .hamburger .nav {
+  width: 100%;
+  width: 7rem;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+.header .hamburger .nav.active {
+  height: 13rem;
+}
+.header .hamburger .nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.9rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  list-style: none;
+}
+.header .hamburger .nav ul li {
+  opacity: 0.8;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.header .hamburger .nav ul li:hover {
+  opacity: 1;
+}
+.header .hamburger .nav ul li a {
+  text-decoration: none;
+  color: #dddddd;
+}
+.header .hamburger .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.23rem;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+.header .hamburger .wrapper.active {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .hamburger .wrapper.active div {
+  position: absolute;
+  width: 1.3rem;
+}
+.header .hamburger .wrapper.active div:nth-child(2) {
+  display: none;
+}
+.header .hamburger .wrapper.active div:first-child {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.header .hamburger .wrapper.active div:last-child {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+.header .hamburger .wrapper:hover {
+  opacity: 1;
+}
+.header .hamburger .wrapper div {
+  width: 1.5rem;
+  height: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: #dddddd;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.hero {
+  width: 100%;
+}
+.hero .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+.hero .wrapper .hero-start-text {
+  opacity: 0.7;
+}
+.hero .wrapper .hero-main-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.hero .wrapper .hero-detail-text {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
