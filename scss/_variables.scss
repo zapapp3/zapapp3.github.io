@@ -17,3 +17,9 @@ $primary-color: #5b00d1;
         height: 13rem;
     }
 }
+
+@keyframes show-hero {
+    to {
+        opacity: 1;
+    }
+}
