@@ -10,7 +10,6 @@ class Nav {
     init() {
         this.hamburger.addEventListener('click', (event) => {
             this.nav.classList.toggle('active');
-            console.log('clicked');
         });
     }
 }
