@@ -7,7 +7,7 @@
     color: $color;
 
     & > * {
-        padding: 0.5em;
+        padding: 1em;
     }
 }
 
@@ -44,8 +44,17 @@
             overflow: hidden;
             transition: 200ms;
 
+            @include screen(md) {
+                position: static;
+                width: 100%;
+                height: 100%;
+                padding-right: 3rem;
+            }
+
             &.active {
                 height: 13rem;
+                margin-top: 1rem;
+                // background-color: red;
             }
 
             ul {
@@ -59,9 +68,14 @@
                 align-items: flex-end;
                 list-style: none;
 
+                @include screen(md) {
+                    flex-direction: row;
+                }
+
                 li {
                     opacity: 0.8;
                     transition: all 200ms;
+                    font-size: 0.9rem;
 
                     &:hover {
                         opacity: 1;
@@ -70,6 +84,10 @@
                     a {
                         text-decoration: none;
                         color: $color;
+
+                        @include screen(md) {
+                            letter-spacing: 0.09rem;
+                        }
                     }
                 }
             }
@@ -83,11 +101,19 @@
             transition: 200ms;
             // background-color: green;
 
+            position: relative;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            @include screen(md) {
+                display: none;
+            }
+
             &.active {
-                position: relative;
-                width: 2.5rem;
-                height: 2.5rem;
-                border-radius: 50%;
+                // position: relative;
+                // width: 2.5rem;
+                // height: 2.5rem;
+                // border-radius: 50%;
 
                 @include flex-center;
 
