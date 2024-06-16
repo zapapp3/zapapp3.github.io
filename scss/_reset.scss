@@ -8,7 +8,20 @@
 }
 
 html {
-    font-size: $font-size;
+    font-size: 12px;
+    // font-size: clamp(9px, 300vw, 18px);
+    @include screen(sm) {
+        font-size: 14px;
+    }
+    @include screen(md) {
+        font-size: 16px;
+    }
+    @include screen(lg) {
+        font-size: 18px;
+    }
+    @include screen(xl) {
+        font-size: 20px;
+    }
 }
 
 body {

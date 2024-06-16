@@ -25,3 +25,31 @@ $primary-color: #5b00d1;
 }
 
 // media queries
+
+// $screen-sizes: {
+//     sm: 320,
+//     md: 768,
+//     lg: 1024,
+//     xl: 1200
+
+// }
+
+@mixin screen($size) {
+    @if ($size == sm) {
+        @media only screen and (min-width: 320px) {
+            @content;
+        }
+    } @else if ($size == md) {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    } @else if ($size == lg) {
+        @media only screen and (min-width: 1024px) {
+            @content;
+        }
+    } @else if ($size == xl) {
+        @media only screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+}
